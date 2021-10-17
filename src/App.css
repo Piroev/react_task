@@ -1,8 +1,12 @@
 .App {
   text-align: center;
 }
+* {
+  font-family: 'Comfortaa', cursive;
+}
 body {
   background-color: #f2f2f2;
+  
 }
 .App-logo {
   height: 40vmin;
@@ -42,13 +46,14 @@ body {
   display: block;
   margin: 25px 25px;
   width: 150px;
-  height: 30px;
-  background-color: #e6f9ff;
-  border: 1px solid #d9d9d9;
+  height: 60px;
+  background-color: #336600;
+  border: 1px solid #585757;
   border-radius: 5px;
+  color: #e6f2ff;
 }
 .btns:hover {
-  background-color: #e6f2ff;
+  opacity: 70%;
 }
 ul {
   list-style-type: none;
@@ -64,7 +69,30 @@ ul {
 .usersList{
   display: flex;
   border-top: #282c34 1px solid;
+  flex-direction: row;
+  align-content: center;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
 }
-.infoLable {
+.rowBtns {
+  position: absolute;
+  border: 1px solid #0f0505;
   padding: 5px;
+  font-weight: bold;
+  border-radius: 4px;
+
+}
+.rowBtns:hover {
+  opacity: 80%;
+}
+#edit {
+  right: 77px;
+  background-color: #336600;
+  color: #e6f2ff;
+  width: 50px;
+}
+#delete {
+  right: 10px;
+  background-color: #cc3300;
 }
