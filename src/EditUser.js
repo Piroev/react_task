@@ -5,16 +5,17 @@ function EditUser(props) {
     
     return (
         <div className="popup">
-            <input type="text" name="name" placeholder="Enter you name"></input>
+            <span className="formInputLabel">Name</span><input className="formInputs" type="text" name="name"></input>
+            <span className="formInputLabel">Last Name</span><input className="formInputs" type="text" name="lastname"></input>
+            <span className="formInputLabel">Email Address</span><input className="formInputs" type="email" name="email"></input>
+            <span className="formInputLabel">Gender</span><input className="formInputs" type="text" name="gender"></input>
+            <span className="formInputLabel">City</span><input className="formInputs" type="text" name="city"></input>
+            <span className="formInputLabel">Country</span><input className="formInputs" type="text" name="country"></input>
+            <input className="submit" type="submit"></input>
         </div>
     )
     
 }
 
 export default EditUser;
-                //     <input type="text" name="name">
-                //     <input type="text" name="lastName">
-                //     <input type="email" name="email">
-                //     <input type="text" name="gender">
-                //    <input type="text" name="city">
-                //    <input type="text" name="country"></input>
+                

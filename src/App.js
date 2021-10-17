@@ -15,7 +15,6 @@ function App() {
             !isHidden ? <UsersList/> : ""
           }
           </div>
-          <EditUser/>
       </div>
 
   );
