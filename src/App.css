@@ -6,92 +6,36 @@
 }
 body {
   background-color: #ffffff;
-  
-}
-
-.btns {
-  display: block;
-  margin: 25px 25px;
-  width: 150px;
-  height: 60px;
-  background-color: #007DC7;
-  border: 1px solid #585757;
-  border-radius: 5px;
-  color: #e6f2ff;
-  font-weight: bold;
-}
-.btns:hover {
-  opacity: 70%;
-}
-ul {
-  list-style-type: none;
-}
-.Users{
-  background-color: #d2ebfa;
-  border: #282c34 2px solid;
-}
-.userInfo{
-  padding: 5px;
-  font-weight: bold;
-}
-.usersList{
-  display: flex;
-  border-top: #282c34 1px solid;
-  flex-direction: row;
-  align-content: center;
-  justify-content: flex-start;
-  align-items: center;
-  flex-wrap: nowrap;
-}
-.rowBtns {
-  position: absolute;
-  border: 1px solid #0f0505;
-  padding: 5px;
-  font-weight: bold;
-  border-radius: 4px;
-
-}
-.rowBtns:hover {
-  opacity: 80%;
-}
-#edit {
-  right: 77px;
-  background-color: #0080C2;
-  color: #e6f2ff;
-  width: 50px;
-}
-#delete {
-  right: 10px;
-  border-style: none;
-  background-color: #cc3300;
-}
-.popup{
-  padding: 50px;
-  background-color: #ffffff;
-  border-radius: 5px;
-  position: absolute;
-  top: 27%;
-  left: 30%;
-  
-}
-.formInputs{
-  width: 300px;
-  height: 20px;
-  border: 1px solid #007DC7;
-  border-radius: 3px;
   padding: 10px;
 }
-.formInputLabel{
-  padding: 5px;
-  background-color: #007DC7;
-  font-size: 12px;
-  font-weight: bold;
-  color: #ffffff;
+
+.btn-primary:hover,.btn-primary:focus,.btn-primary:active, 
+.btn-primary:active:focus:not(:disabled):not(.disabled),
+.btn:focus, .btn:active, .btn:hover{
+    box-shadow: none!important;
+    outline: 0;
 }
-.submitForm {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  align-content: stretch;
-  align-items: flex-start
+.container-user-info {
+  position: fixed;
+  top: 30%;
+  left: 40%;
+  z-index: 10;
+  width: 400px;
+  border-radius: 2px;
+  box-shadow: #000000 5px;
+  
+  background-color: #ffffff;
+  
+}
+.info-header {
+  background-color: #007CB3;
+  color: #ffffff;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+}
+.user-info {
+  border: 1px solid #007CB3;
+  border-radius: 2px;
+  padding: 10px;
 }

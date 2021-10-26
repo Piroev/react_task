@@ -1,21 +1,34 @@
 import React, { useState } from 'react';
-import logo from './logo.svg';
 import './App.css';
-import UsersList from "./UsersList";
-import EditUser from './EditUser';
-
+import NavButtons from './components/app/NavButtons';
+import Header from './components/app/Header';
+import { Col, Container, Row } from "react-bootstrap";
+import UsersList from './components/users/UsersList';
 
 function App() {
-    const [isHidden, setIsHidden] = useState(true);
-  return (
-      <div>
-        <button className="btns" onClick={() => setIsHidden((s) => !s)}>{ isHidden ? "Show users list" : "Hide"}</button>
-        <button className="btns">Show products list</button>
-          <div>{
-            !isHidden ? <UsersList/> : ""
-          }
-          </div>
-      </div>
+  
+  const [usersListState, setUserslistState] = useState(false);
+
+  const clickedBtn = () => {
+    setUserslistState(!usersListState);
+  }
+ return (
+      <Container fluid>
+        <Row>
+          <Header fixed="top"/>
+        </Row>
+        <Row>
+          <Col sm={3}>
+            <NavButtons
+              props={usersListState}
+              clickedBtn={clickedBtn}
+            />
+          </Col>
+          <Col sm={8}>
+            {usersListState && <UsersList />} 
+          </Col>
+        </Row>
+      </Container>
 
   );
 }
